@@ -9,3 +9,11 @@ Route::get('/', function () {
 Route::get('/app', function () {
     return view('app');
 });
+
+Route::get('/pinjambuku', function () {
+    return view('pinjambuku');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
