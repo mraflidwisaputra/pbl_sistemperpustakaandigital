@@ -34,11 +34,15 @@
                 <label class="block mt-4 mb-1 font-medium">Pilih Kategori</label>
                 <select class="w-full p-2 border rounded-lg">
                     <option>Pilih kategori</option>
+                    <option>Fiksi</option>
+                    <option>Non-Fiksi</option>
                 </select>
 
                 <label class="block mt-4 mb-1 font-medium">Pilih Buku</label>
                 <select class="w-full p-2 border rounded-lg">
                     <option>Pilih buku</option>
+                    <option>Upin Upin</option>
+                    <option>Joshua dan Iwan</option>
                 </select>
             </div>
 
