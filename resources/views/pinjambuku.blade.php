@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>Form Peminjaman</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -35,11 +34,15 @@
                 <label class="block mt-4 mb-1 font-medium">Pilih Kategori</label>
                 <select class="w-full p-2 border rounded-lg">
                     <option>Pilih kategori</option>
+                    <option>Fiksi</option>
+                    <option>Non-Fiksi</option>
                 </select>
 
                 <label class="block mt-4 mb-1 font-medium">Pilih Buku</label>
                 <select class="w-full p-2 border rounded-lg">
                     <option>Pilih buku</option>
+                    <option>Upin Upin</option>
+                    <option>Joshua dan Iwan</option>
                 </select>
             </div>
 
@@ -57,6 +60,7 @@
         <button class="mt-8 w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">
             Pinjam
         </button>
+
     </div>
 
 </body>
