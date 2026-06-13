@@ -54,6 +54,7 @@ Route::get('/login', function () {
     return view('login');
 });
 
+<<<<<<< HEAD
 Route::get('/lupapassword', function () {
     return view('lupapassword');
 });
@@ -102,3 +103,21 @@ Route::get('/kategori', [KategoriController::class, 'index'])->name('kategori.in
 Route::post('/kategori/store', [KategoriController::class, 'store'])->name('kategori.store');
 Route::put('/kategori/update/{id}', [KategoriController::class, 'update'])->name('kategori.update');
 Route::delete('/kategori/delete/{id}', [KategoriController::class, 'destroy'])->name('kategori.delete');
+=======
+<<<<<<< HEAD
+Route::get('/kelola data', function () {
+    return view('keloladata');
+});
+
+Route::get('/keloladenda', function () {
+    return view('keloladenda');
+=======
+Route::get('/Daftarbuku', function () {
+    return view('Daftarbuku');
+});
+
+Route::get('/Register', function () {
+    return view('Register');
+>>>>>>> 0c2aad9ee736e6a62656310fa4c7dda385fe3220
+});
+>>>>>>> 72c0d82dde3cf4663099b55714e16b86ec4f72be
