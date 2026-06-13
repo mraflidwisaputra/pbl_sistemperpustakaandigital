@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\Models\Buku;
 use App\Models\Kategori;
 use App\Models\Peminjaman;
+=======
+>>>>>>> 2dd4a82683bcb78480bad5d83caf5cdd3378ca47
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -12,6 +15,7 @@ class DaftarBukuController extends Controller
 {
     public function index(Request $request)
     {
+<<<<<<< HEAD
         $kategori = Kategori::all();
 
         $buku = Buku::with('kategori')
@@ -25,10 +29,36 @@ class DaftarBukuController extends Controller
                 $query->where('kategori_id', $request->kategori);
             })
             ->latest()
+=======
+        $query = DB::table('buku')
+            ->leftJoin('kategori', 'buku.id_kategori', '=', 'kategori.id_kategori')
+            ->select(
+                'buku.*',
+                'kategori.nama_kategori'
+            );
+
+        if ($request->search) {
+            $query->where(function ($q) use ($request) {
+                $q->where('buku.judul_buku', 'like', '%' . $request->search . '%')
+                  ->orWhere('buku.penulis', 'like', '%' . $request->search . '%')
+                  ->orWhere('kategori.nama_kategori', 'like', '%' . $request->search . '%');
+            });
+        }
+
+        if ($request->kategori) {
+            $query->where('kategori.nama_kategori', $request->kategori);
+        }
+
+        $buku = $query->orderBy('buku.id_buku', 'desc')->get();
+
+        $kategori = DB::table('kategori')
+            ->orderBy('nama_kategori', 'asc')
+>>>>>>> 2dd4a82683bcb78480bad5d83caf5cdd3378ca47
             ->get();
 
         return view('daftarbuku', compact('buku', 'kategori'));
     }
+<<<<<<< HEAD
 
     public function pinjam(Request $request)
     {
@@ -70,4 +100,6 @@ class DaftarBukuController extends Controller
                 ->with('error', $e->getMessage());
         }
     }
+=======
+>>>>>>> 2dd4a82683bcb78480bad5d83caf5cdd3378ca47
 }

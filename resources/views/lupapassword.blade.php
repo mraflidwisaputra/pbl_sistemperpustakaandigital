@@ -45,7 +45,11 @@
 
             <!-- Back to Login -->
             <div class="text-center pt-2">
+<<<<<<< HEAD
                 <a href="login.html" class="text-sm text-gray-600 hover:text-blue-500 font-medium transition">
+=======
+                <a href="login" class="text-sm text-gray-600 hover:text-blue-500 font-medium transition">
+>>>>>>> 2dd4a82683bcb78480bad5d83caf5cdd3378ca47
                     <i class="fas fa-arrow-left mr-1"></i>Kembali ke Login
                 </a>
             </div>
