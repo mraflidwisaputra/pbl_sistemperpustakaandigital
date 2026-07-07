@@ -92,31 +92,13 @@
                 </a>
             </li>
 
-            <!-- KONTAK -->
-            <li>
-                <a href="{{ route('contact') }}"
-                   class="flex items-center p-3 text-white rounded-lg
-                   {{ request()->routeIs('contact') ? 'bg-blue-600' : 'hover:bg-blue-600' }}">
-
-                    <svg class="w-5 h-5 mr-3 text-white"
-                         xmlns="http://www.w3.org/2000/svg"
-                         fill="currentColor"
-                         viewBox="0 0 20 16">
-                        <path d="m10.036 8.278 9.258-7.79A1.98 1.98 0 0 0 18 0H2A1.98 1.98 0 0 0 .706.488l9.33 7.79Z"/>
-                        <path d="M11.241 9.817a2 2 0 0 1-2.482 0L0 2.5V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
-                    </svg>
-
-                    <span>Kontak</span>
-                </a>
-            </li>
-
         </ul>
 
         <!-- LOGOUT -->
         <div class="absolute bottom-5 left-4 right-4">
 
-            <a href="#"
-               class="flex items-center p-3 text-white rounded-lg bg-blue-600 hover:bg-blue-700">
+            <a href="{{ route('login') }}"
+               class="flex items-center p-3 text-white rounded-lg bg-red-600 hover:bg-red-700">
 
                 <svg class="w-5 h-5 mr-3 text-white"
                      xmlns="http://www.w3.org/2000/svg"

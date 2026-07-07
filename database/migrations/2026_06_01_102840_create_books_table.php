@@ -6,24 +6,27 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+    /**
+     * Run the migrations.
+     */
     public function up(): void
     {
-        Schema::create('books', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->string('author');
-            $table->string('category')->nullable();
-            $table->string('cover')->nullable();
-            $table->decimal('rating', 2, 1)->default(4.8);
-            $table->integer('review_count')->default(0);
-            $table->string('status')->default('Tersedia');
-            $table->year('year')->nullable();
-            $table->timestamps();
-        });
+        Schema::create('buku', function (Blueprint $table) {
+        $table->id();
+        $table->string('judul');
+        $table->string('penulis');
+        $table->string('kategori');
+        $table->string('cover');
+        $table->integer('stok');
+        $table->timestamps();
+    });
     }
 
+    /**
+     * Reverse the migrations.
+     */
     public function down(): void
     {
-        Schema::dropIfExists('books');
+        Schema::dropIfExists('buku');
     }
 };

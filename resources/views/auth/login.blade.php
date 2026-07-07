@@ -16,7 +16,7 @@
         }
 
         .font-login {
-            font-family: 'Courier New', monospace;
+            font-family: 'open sans', monospace;
         }
     </style>
 </head>
@@ -76,7 +76,7 @@
                     class="w-full h-12 rounded-md border border-sky-400 bg-white/90 text-lg px-3 focus:ring-sky-400 focus:border-sky-400">
             </div>
 
-            <div class="mb-3">
+            <div class="mb-8">
                 <label class="block text-2xl font-bold text-black mb-1">
                     Password
                 </label>
@@ -126,13 +126,7 @@
                 </div>
             </div>
 
-            <div class="text-right mb-7">
-                <a href="#" class="text-blue-700 text-xl font-bold hover:underline">
-                    Lupa Password?
-                </a>
-            </div>
-
-            <div class="flex justify-center">
+            <div class="flex justify-center mt-8">
                 <button type="submit"
                     class="bg-sky-500 hover:bg-sky-600 text-white text-2xl font-bold px-12 py-2 rounded-lg">
                     Login
