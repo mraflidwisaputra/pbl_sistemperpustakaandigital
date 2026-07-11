@@ -17,6 +17,11 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\NotifikasiController;
 
+
+Route::get('/landingpage', function () {
+    return view('landingpage');
+});
+
 Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.process');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
