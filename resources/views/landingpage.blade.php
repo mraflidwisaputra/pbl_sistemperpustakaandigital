@@ -27,7 +27,7 @@
                     <a href="#beranda" class="text-gray-600 hover:text-blue-500 font-medium transition">Beranda</a>
                     <a href="#fitur" class="text-gray-600 hover:text-blue-500 font-medium transition">Fitur</a>
                     <a href="#tentang" class="text-gray-600 hover:text-blue-500 font-medium transition">Tentang</a>
-                    <a href="login" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-medium transition">Login</a>
+                    <a href="{{ route('login') }}" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-medium transition">Login</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -43,7 +43,7 @@
                 <a href="#beranda" class="block py-2 text-gray-600 hover:text-blue-500">Beranda</a>
                 <a href="#fitur" class="block py-2 text-gray-600 hover:text-blue-500">Fitur</a>
                 <a href="#tentang" class="block py-2 text-gray-600 hover:text-blue-500">Tentang</a>
-                <a href="login.html" class="block py-2 text-blue-500 font-semibold">Login</a>
+                <a href="{{ route('login') }}" class="block py-2 text-blue-500 font-semibold">Login</a>
             </div>
         </div>
     </nav>
